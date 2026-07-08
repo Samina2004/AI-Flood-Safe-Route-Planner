@@ -27,7 +27,7 @@ The result is a navigation assistant designed for exactly the moment when connec
 ### 2. Live Terminal & Safe Route Querying
 | Dashboard Terminal | Route Destination Setup | Profile & Emergency Dashboard |
 | --- | --- | --- |
-| <img src="4.jpeg" width="250"> | <img src="6.jpeg" width="250"> | <img src="7.jpg" width="250"> |
+| <img src="4.jpeg" width="250"> | <img src="6.jpeg" width="250"> | <img src="7.jpeg" width="250"> |
 
 ### 3. Predictive Analytics & Emergency Broadcasts
 | Real-Time Live Alerts Engine | Predictive Analytics & Graph |
@@ -37,7 +37,7 @@ The result is a navigation assistant designed for exactly the moment when connec
 ### 4. Smart Maps & Dynamic Risk Rendering
 | Geographic Engine / Search | Alternative Route Paths | 3-Level Risk Layout Engine |
 | --- | --- | --- |
-| <img src="8.jpeg" width="250"> | <img src="9.jpeg" width="250"> | <img src="10.jpg" width="250"> |
+| <img src="8.jpeg" width="250"> | <img src="9.jpeg" width="250"> | <img src="10.jpeg" width="250"> |
 
 ---
 
