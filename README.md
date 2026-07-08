@@ -25,7 +25,7 @@ The result is a navigation assistant designed for exactly the moment when connec
 | <img src="1.jpeg" width="220"> | <img src="2.jpeg" width="220"> | <img src="3.jpeg" width="220"> | <img src="13.jpeg" width="220"> |
 
 ### 2. Live Terminal & Safe Route Querying
-| Dashboard Terminal | Route Destination Setup | Profile & Emergency Dashboard |
+| Dashboard Terminal | Route Destination Setup | Simple Map & Location Search |
 | --- | --- | --- |
 | <img src="4.jpeg" width="250"> | <img src="6.jpeg" width="250"> | <img src="7.jpeg" width="250"> |
 
