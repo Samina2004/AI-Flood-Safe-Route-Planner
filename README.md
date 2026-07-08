@@ -1,6 +1,7 @@
 # 🌊 AI-Powered Flood-Safe Route Planner
 
 > An offline-first Android application that predicts flood risk and computes the safest navigable route through flood-prone urban terrain — built as a Final Year Project focused on **Sialkot City, Pakistan**.
+
 ---
 
 ## 📖 Overview
@@ -13,6 +14,30 @@ Urban flooding regularly cuts off roads and strands commuters in cities like Sia
 - Runs entirely on-device, with no dependency on constant cloud connectivity
 
 The result is a navigation assistant designed for exactly the moment when connectivity and infrastructure are most likely to fail: during a flood.
+
+---
+
+## 📸 App Walkthrough & User Interface
+
+### 1. Splash, Authentication & Guest Mode Bypass
+| Splash Screen | Secure Sign In | Secure Sign Up | Guest Mode Interface |
+| --- | --- | --- | --- |
+| <img src="1.jpeg" width="220"> | <img src="2.jpeg" width="220"> | <img src="3.jpeg" width="220"> | <img src="13.jpeg" width="220"> |
+
+### 2. Live Terminal & Safe Route Querying
+| Dashboard Terminal | Route Destination Setup | Profile & Emergency Dashboard |
+| --- | --- | --- |
+| <img src="4.jpeg" width="250"> | <img src="6.jpeg" width="250"> | <img src="7.jpg" width="250"> |
+
+### 3. Predictive Analytics & Emergency Broadcasts
+| Real-Time Live Alerts Engine | Predictive Analytics & Graph |
+| --- | --- |
+| <img src="12.jpeg" width="250"> | <img src="11.jpeg" width="250"> |
+
+### 4. Smart Maps & Dynamic Risk Rendering
+| Geographic Engine / Search | Alternative Route Paths | 3-Level Risk Layout Engine |
+| --- | --- | --- |
+| <img src="8.jpeg" width="250"> | <img src="9.jpeg" width="250"> | <img src="10.jpg" width="250"> |
 
 ---
 
@@ -32,7 +57,7 @@ This project addresses these gaps with a lightweight, predictive, and offline-ca
 - 🧠 **Flood Prediction Models** — XGBoost (proposed primary model) and LSTM for time-series flood and rainfall forecasting
 - 🗺️ **3D Dijkstra Routing Engine** — Custom pathfinding algorithm where elevation and flood-risk scores are factored directly into edge weights, not just distance
 - 📡 **Offline-First Architecture** — TensorFlow Lite for on-device inference and OpenStreetMap for offline map rendering — no constant cloud dependency
-- ⚡ **Low Latency, Low Hardware Footprint** — Optimized for mid-range Android devices, built for accessibility over raw compute power
+- ⚡ **Low Hardware Footprint** — Optimized for mid-range Android devices, built for accessibility over raw compute power
 - 🌧️ **Real-Time Alerts** — Live weather and rainfall data integration for current-condition risk updates
 - 📊 **Analytics Dashboard** — Visualizes flood trends, rainfall patterns, and historical risk zones
 
@@ -40,26 +65,24 @@ This project addresses these gaps with a lightweight, predictive, and offline-ca
 
 ## 🏗️ System Architecture
 
-```
 ┌─────────────────────────────────────────────────────────┐
-│                     Presentation Layer                  │
+│                 Presentation Layer                      │
 │         (Fragments: Home, Maps, Alerts, Analytics)       │
 └───────────────────────────┬───────────────────────────────┘
-                            │  MVVM
+│  MVVM
 ┌───────────────────────────▼───────────────────────────────┐
 │                      ViewModel Layer                      │
-│              (State management, UI logic)                 │
+│               (State management, UI logic)                │
 └───────────────────────────┬───────────────────────────────┘
-                            │
-        ┌───────────────────┼───────────────────┐
-        ▼                   ▼                   ▼
+│
+┌───────────────────┼───────────────────┐
+▼                   ▼                   ▼
 ┌───────────────┐   ┌───────────────┐   ┌───────────────────┐
-│  TFLite Model  │   │  3D Dijkstra   │   │   OSM Offline Map  │
-│  (Flood/Rain   │   │  Router Engine │   │     Rendering       │
-│   Prediction)  │   │ (Risk-weighted │   │                     │
-│                │   │     edges)     │   │                     │
+│  TFLite Model │   │  3D Dijkstra  │   │  OSM Offline Map  │
+│  (Flood/Rain  │   │  Router Engine│   │     Rendering     │
+│   Prediction) │   │ (Risk-weighted│   │                   │
+│               │   │     edges)    │   │                   │
 └───────────────┘   └───────────────┘   └───────────────────┘
-```
 
 **Tech Stack:**
 
@@ -113,40 +136,32 @@ The flood prediction pipeline is trained on multi-source geospatial and meteorol
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/AnzlaNazar/AIPoweredFloodSafeRoutePlanner.git
-   ```
+   git clone https://github.com/Samina2004/AI-Flood-Safe-Route-Planner.git
+Add your own google-services.json to the app/ directory (from your Firebase console)
 
-2. Add your own `google-services.json` to the `app/` directory (from your Firebase console)
+Create a local.properties file in the project root and add:
 
-3. Create a `local.properties` file in the project root and add:
-   ```
-   OPENWEATHER_API_KEY=your_api_key_here
-   ```
+Properties
+OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY_HERE
+Open in Android Studio, let Gradle sync, and run on an emulator or device (minSdk 24+)
 
-4. Open in Android Studio, let Gradle sync, and run on an emulator or device (minSdk 24+)
-
----
-
-## 🎯 Project Scope & Focus
-
+🎯 Project Scope & Focus
 This project deliberately prioritizes:
-- **Offline functionality** over cloud-dependent AI pipelines
-- **Minimal hardware requirements** over high-compute model complexity
-- **Low latency inference** over larger, slower model architectures
-- A **risk-aware routing algorithm** over simple shortest-path navigation
+
+Offline functionality over cloud-dependent AI pipelines
+
+Minimal hardware requirements over high-compute model complexity
+
+Low latency inference over larger, slower model architectures
+
+A risk-aware routing algorithm over simple shortest-path navigation
 
 These constraints reflect the real-world conditions of flood-affected areas — unreliable connectivity, limited device capability, and the need for fast, actionable guidance.
 
----
-
-## 👩‍💻 Author
-
-**Anzla Nazar**
+👩‍💻 Author
+Samina Nawaz
 Final Year — BS Information Technology, University of Sargodha
 Supervised by Dr. Bushra Jamil
 
----
-
-## 📄 License
-
+📄 License
 This project is developed as an academic Final Year Project. Feel free to explore the code for learning purposes. For reuse or collaboration inquiries, please reach out directly.
