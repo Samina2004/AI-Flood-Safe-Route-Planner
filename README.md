@@ -145,23 +145,28 @@ Properties
 OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY_HERE
 Open in Android Studio, let Gradle sync, and run on an emulator or device (minSdk 24+)
 
-🎯 Project Scope & Focus
+---
+
+## 🎯 **Project Scope & Focus**
+
 This project deliberately prioritizes:
+*   **Offline functionality** over cloud-dependent AI pipelines
+*   **Minimal hardware requirements** over high-compute model complexity
+*   **Low latency inference** over larger, slower model architectures
+*   **A risk-aware routing algorithm** over simple shortest-path navigation
 
-Offline functionality over cloud-dependent AI pipelines
+*These constraints reflect the real-world conditions of flood-affected areas — unreliable connectivity, limited device capability, and the need for fast, actionable guidance.*
 
-Minimal hardware requirements over high-compute model complexity
+---
 
-Low latency inference over larger, slower model architectures
+## 👩‍💻 **Author**
 
-A risk-aware routing algorithm over simple shortest-path navigation
+**Samina Nawaz**  
+*Final Year — BS Information Technology, University of Sargodha*  
+**Supervised by:** Dr. Bushra Jamil
 
-These constraints reflect the real-world conditions of flood-affected areas — unreliable connectivity, limited device capability, and the need for fast, actionable guidance.
+---
 
-👩‍💻 Author
-Samina Nawaz
-Final Year — BS Information Technology, University of Sargodha
-Supervised by Dr. Bushra Jamil
+## 📄 **License**
 
-📄 License
-This project is developed as an academic Final Year Project. Feel free to explore the code for learning purposes. For reuse or collaboration inquiries, please reach out directly.
+This project is developed as an academic **Final Year Project**. Feel free to explore the code for learning purposes. For reuse or collaboration inquiries, please reach out directly.
